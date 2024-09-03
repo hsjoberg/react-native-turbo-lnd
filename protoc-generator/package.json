@@ -1,0 +1,10 @@
+{
+  "name": "protoc-generator",
+  "private": true,
+  "scripts": {
+    "generate": "sh gen_bindings.sh"
+  },
+  "dependencies": {
+    "@bufbuild/protoc-gen-es": "^2.0.0"
+  }
+}
