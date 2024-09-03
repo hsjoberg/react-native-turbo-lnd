@@ -7,6 +7,12 @@ import com.facebook.react.defaults.DefaultReactActivityDelegate
 
 import android.os.Bundle
 
+<<<<<<< HEAD
+=======
+import jnibinding.Jni
+import jnibinding.SimpleCallback
+
+>>>>>>> fddd1a8 (Initial commit)
 class MainActivity : ReactActivity() {
 
   /**
@@ -25,5 +31,19 @@ class MainActivity : ReactActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+<<<<<<< HEAD
+=======
+
+    val jni = Jni()
+    // jni.hej()
+
+    jni.performOperation(object : SimpleCallback {
+        override fun onResult(result: String) {
+            android.util.Log.d("turbolnd", result)
+            // println("result: $result")
+        }
+    })
+    // hej()
+>>>>>>> fddd1a8 (Initial commit)
   }
 }

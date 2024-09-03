@@ -6,7 +6,11 @@ import { FastTextDecoder } from "./third-party/fast-text-encoding/o-decoder";
 const te = new FastTextEncoder();
 const td = new FastTextDecoder();
 
+<<<<<<< HEAD
 configureTextEncoding({
+=======
+export default configureTextEncoding({
+>>>>>>> fddd1a8 (Initial commit)
   encodeUtf8: te.encode as (str: string) => Uint8Array,
   decodeUtf8: td.decode as (data: Uint8Array) => string,
 
