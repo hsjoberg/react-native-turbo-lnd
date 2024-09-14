@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>💖 Hello World!</h1>
+    <p>Welcome to your Electron application.</p>
+
+
+    <button id="startLndBtn">Start LND</button>
+    <div id="result"></div>
+
+    <script>
+      document.getElementById('startLndBtn').addEventListener('click', async () => {
+        try {
+          const result = await window.electronAPI.startLnd(`
+--lnddir=~/electronlnd
+--noseedbackup
+--nolisten
+--bitcoin.active
+--bitcoin.regtest
+--bitcoin.node=neutrino
+--feeurl="https://nodes.lightning.computer/fees/v1/btc-fee-estimates.json"
+--routing.assumechanvalid
+--tlsdisableautofill
+--db.bolt.auto-compact
+--db.bolt.auto-compact-min-age=0
+--neutrino.connect=192.168.10.120:19444
+          `);
+          document.getElementById('result').textContent = 'LND started: ' + result;
+        } catch (error) {
+          document.getElementById('result').textContent = 'Error: ' + error.message;
+        }
+      });
+    </script>
+  </body>
+</html>
