@@ -2,7 +2,9 @@
 #include <napi.h>
 #include <string>
 
+#define _CRT_USE_C_COMPLEX_H 1
 #include "liblnd.h"
+#undef _CRT_USE_C_COMPLEX_H
 
 typedef void (*LndFuncPtr)(char*, int length, CCallback);
 

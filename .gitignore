@@ -79,12 +79,15 @@ lib/
 
 .xcode.env.local
 
-
 # lnd
 liblnd.so
 liblnd.a
-
+liblnd.dll
+liblnd.lib
 
 # Generated files
 /example/src/proto
 /src/proto
+
+# gyp & electron
+bin
