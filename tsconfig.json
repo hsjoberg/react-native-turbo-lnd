@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "": ["./src/index"]
+      "": ["./src/index", "./src/fetch-lnd.js"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
