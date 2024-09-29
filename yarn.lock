@@ -10965,8 +10965,23 @@ __metadata:
     fast-text-encoding: ^1.0.6
     react: 18.3.1
     react-native: 0.75.3
+    react-native-turbo-lnd: "github:hsjoberg/react-native-turbo-lnd#ab80df4384eec741b633e3af86e3e4ecd6445d7b"
   languageName: unknown
   linkType: soft
+
+"react-native-turbo-lnd@github:hsjoberg/react-native-turbo-lnd#ab80df4384eec741b633e3af86e3e4ecd6445d7b":
+  version: 0.1.2
+  resolution: "react-native-turbo-lnd@https://github.com/hsjoberg/react-native-turbo-lnd.git#commit=ab80df4384eec741b633e3af86e3e4ecd6445d7b"
+  peerDependencies:
+    "@bufbuild/protobuf": "*"
+    react: "*"
+    react-native: "*"
+  peerDependenciesMeta:
+    "@bufbuild/protobuf":
+      optional: true
+  checksum: 49a6c9fb429b3e226fb17c49cf04b7404491350eb8976018b499a205695bbb8bce8f9b2b1fc4d3843f2a91caa377d0db403b094a80a7351d273a25a8505d874b
+  languageName: node
+  linkType: hard
 
 "react-native-turbo-lnd@workspace:.":
   version: 0.0.0-use.local
