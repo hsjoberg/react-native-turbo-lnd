@@ -5,7 +5,14 @@
 /* eslint-disable */
 import "./setup-text-encoding";
 
-import TurboLnd, { type OnResponseCallback, type OnErrorCallback, type UnsubscribeFromStream } from "./core/NativeTurboLnd";
+let TurboLnd: any;
+if ((globalThis as any)["fakelnd"] || typeof jest !== 'undefined') {
+  TurboLnd = require('./mocks/index').default;
+} else {
+  TurboLnd = require('./core/NativeTurboLnd').default;
+}
+import { type OnResponseCallback, type OnErrorCallback, type UnsubscribeFromStream } from "./core/NativeTurboLnd";
+
 import { create, toBinary, fromBinary, type MessageInitShape } from "@bufbuild/protobuf";
 import { base64Encode, base64Decode } from "@bufbuild/protobuf/wire";
 
