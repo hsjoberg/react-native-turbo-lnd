@@ -4,7 +4,7 @@ import { StyleSheet, View, Button, Platform, Alert, TextInput } from "react-nati
 import * as RNFS from '@dr.pogodin/react-native-fs';
 
 // The default protobuf-es bindings
-import { start, getInfo, listChannels, subscribeState, channelAcceptor, listPeers, connectPeer } from "react-native-turbo-lnd";
+import { start, getInfo, listChannels, subscribeState, channelAcceptor, listPeers, connectPeer } from "../../src/index";
 
 // Access to the core API
 // import TurboLnd from "../../src/core/NativeTurboLnd";
