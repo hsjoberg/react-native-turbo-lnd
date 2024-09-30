@@ -1,3 +1,4 @@
+import { WalletAccountBalanceSchema } from "../../lib/typescript/src/proto/lightning_pb";
 import {
   ChannelSchema,
   type Channel,
@@ -12,8 +13,8 @@ import {
   GetInfoResponseSchema,
   AddressType,
   ChannelBalanceResponseSchema,
+  PendingChannelsResponseSchema,
   AmountSchema,
-  WalletAccountBalanceSchema,
 } from "../proto/lightning_pb";
 import { create } from "@bufbuild/protobuf";
 
@@ -219,3 +220,60 @@ export const generateMockTxid = () => {
       .padStart(2, "0")
   ).join("");
 };
+
+export const mockPendingChannelsResponse = create(
+  PendingChannelsResponseSchema,
+  {
+    totalLimboBalance: BigInt(1000000),
+    pendingOpenChannels: [
+      {
+        channel: {
+          remoteNodePub:
+            "03f10c03894188447dbf0a88691387972d93416cc6f2f6e0c0d3505b38f6db8eb5",
+          channelPoint: "txid:1",
+          capacity: BigInt(500000),
+          localBalance: BigInt(250000),
+          remoteBalance: BigInt(250000),
+        },
+        commitFee: BigInt(100),
+        commitWeight: BigInt(724),
+        feePerKw: BigInt(12500),
+      },
+    ],
+    pendingClosingChannels: [],
+    pendingForceClosingChannels: [
+      {
+        channel: {
+          remoteNodePub:
+            "03f10c03894188447dbf0a88691387972d93416cc6f2f6e0c0d3505b38f6db8eb5",
+          channelPoint:
+            "17625c43f15b77bfb61f8ff5cd95e56e3999378cdfc7d3851cd4d0b2a12c2a23:2",
+          capacity: BigInt(1000000),
+          localBalance: BigInt(400000),
+          remoteBalance: BigInt(600000),
+        },
+        closingTxid:
+          "17625c43f15b77bfb61f8ff5cd95e56e3999378cdfc7d3851cd4d0b2a12c2a23",
+        limboBalance: BigInt(400000),
+        maturityHeight: 700100,
+        blocksTilMaturity: 90,
+        recoveredBalance: BigInt(0),
+        pendingHtlcs: [],
+      },
+    ],
+    waitingCloseChannels: [
+      {
+        channel: {
+          remoteNodePub:
+            "03f10c03894188447dbf0a88691387972d93416cc6f2f6e0c0d3505b38f6db8eb5",
+          channelPoint:
+            "17625c43f15b77bfb61f8ff5cd95e56e3999378cdfc7d3851cd4d0b2a12c2a23:3",
+          capacity: BigInt(750000),
+          localBalance: BigInt(350000),
+          remoteBalance: BigInt(400000),
+        },
+        limboBalance: BigInt(350000),
+      },
+    ],
+  }
+);
