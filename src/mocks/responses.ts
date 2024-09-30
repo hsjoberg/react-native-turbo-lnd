@@ -1,4 +1,3 @@
-import { WalletAccountBalanceSchema } from "../../lib/typescript/src/proto/lightning_pb";
 import {
   ChannelSchema,
   type Channel,
@@ -15,6 +14,7 @@ import {
   ChannelBalanceResponseSchema,
   PendingChannelsResponseSchema,
   AmountSchema,
+  WalletAccountBalanceSchema,
 } from "../proto/lightning_pb";
 import { create } from "@bufbuild/protobuf";
 
