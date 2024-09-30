@@ -217,8 +217,6 @@ const TurboLnd: Spec = {
       txid: mockTxid,
     });
 
-    await new Promise((resolve) => setTimeout(resolve, 500));
-
     return base64Encode(toBinary(SendCoinsResponseSchema, response));
   },
 
