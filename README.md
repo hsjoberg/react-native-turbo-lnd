@@ -119,6 +119,14 @@ and Embedded Content" section and click on the "+" button. Search for the
 > If you wish to compile your own lnd binaries, you can follow the instructions
 > [here](https://github.com/hsjoberg/lnd/tree/cshared/mobile#cgo-build).
 
+> [!NOTE]
+> Instead of manually downloading the binaries, you can also use a convenience script.  From the
+> root of your project, run:
+>
+> ```
+> node node_modules/react-native-turbo-lnd/src/fetch-lnd.js
+> ```
+
 3. Done!
 
 ## Usage
