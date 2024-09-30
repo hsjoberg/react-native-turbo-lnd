@@ -29,10 +29,10 @@ platforms
 ✅ Android
 ✅ iOS
 ✅ macOS
-🤨 Linux via react-native-electron and NodeJS C++ Addon (planned)
+🤨 Linux via react-native-web and NodeJS C++ Addon (WIP)
 🚫 Windows (planned)
 🚫 Web
-🚫 Jest mocks (planned)
+✅ Jest mocks (all gRPC methods not yet mocked)
 ```
 
 An opinionated API `react-native-turbo-lnd` using protobuf-es bindings is
