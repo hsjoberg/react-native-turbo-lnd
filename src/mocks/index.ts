@@ -90,6 +90,7 @@ const TurboLnd: Spec = {
   },
 
   initWallet: async (_) => {
+    // TODO(hsjoberg)
     if (currentState === WalletState.LOCKED) {
       return base64Encode(
         toBinary(
@@ -115,6 +116,7 @@ const TurboLnd: Spec = {
 
   unlockWallet: async (_) => {
     if (currentState === WalletState.LOCKED) {
+      // TODO(hsjoberg)
       return base64Encode(
         toBinary(
           UnlockWalletResponseSchema,
