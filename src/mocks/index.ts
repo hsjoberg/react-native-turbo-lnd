@@ -320,733 +320,575 @@ const TurboLnd: Spec = {
 
   // Add placeholders for the remaining functions
   getTransactions: async (_data) => {
-    // TODO: Implement getTransactions
-    return "";
+    throw new Error("getTransactions Not Implemented");
   },
 
   listUnspent: async (_data) => {
-    // TODO: Implement getTransactions
-    return "";
+    throw new Error("listUnspent Not Implemented");
   },
 
   estimateFee: async (_data) => {
-    // TODO: Implement estimateFee
-    return "";
+    throw new Error("estimateFee Not Implemented");
   },
 
   subscribeTransactions: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribeTransactions
-    return () => {};
+    throw new Error("subscribeTransactions Not Implemented");
   },
 
   sendMany: async (_data) => {
-    // TODO: Implement sendMany
-    return "";
+    throw new Error("sendMany Not Implemented");
   },
 
   signMessage: async (_data) => {
-    // TODO: Implement signMessage
-    return "";
+    throw new Error("signMessage Not Implemented");
   },
 
   verifyMessage: async (_data) => {
-    // TODO: Implement verifyMessage
-    return "";
+    throw new Error("verifyMessage Not Implemented");
   },
 
   connectPeer: async (_data) => {
-    // TODO: Implement connectPeer
-    return "";
+    throw new Error("connectPeer Not Implemented");
   },
 
   disconnectPeer: async (_data) => {
-    // TODO: Implement disconnectPeer
-    return "";
+    throw new Error("disconnectPeer Not Implemented");
   },
 
   subscribePeerEvents: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribePeerEvents
-    return () => {};
+    throw new Error("subscribePeerEvents Not Implemented");
   },
 
   getRecoveryInfo: async (_data) => {
-    // TODO: Implement getRecoveryInfo
-    return "";
+    throw new Error("getRecoveryInfo Not Implemented");
   },
 
   subscribeChannelEvents: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribeChannelEvents
-    return () => {};
+    throw new Error("subscribeChannelEvents Not Implemented");
   },
 
   closedChannels: async (_data) => {
-    // TODO: Implement closedChannels
-    return "";
+    throw new Error("closedChannels Not Implemented");
   },
 
   openChannel: (_data, _onResponse, _onError) => {
-    // TODO: Implement openChannel
-    return () => {};
+    throw new Error("openChannel Not Implemented");
   },
 
   batchOpenChannel: async (_data) => {
-    // TODO: Implement batchOpenChannel
-    return "";
+    throw new Error("batchOpenChannel Not Implemented");
   },
 
   fundingStateStep: async (_data) => {
-    // TODO: Implement fundingStateStep
-    return "";
+    throw new Error("fundingStateStep Not Implemented");
   },
 
   channelAcceptor: (_onResponse, _onError) => {
-    // TODO: Implement channelAcceptor
-    return {
-      send: () => true,
-      stop: () => true,
-    };
+    throw new Error("channelAcceptor Not Implemented");
   },
 
   abandonChannel: async (_data) => {
-    // TODO: Implement abandonChannel
-    return "";
+    throw new Error("abandonChannel Not Implemented");
   },
 
   sendPayment: (_onResponse, _onError) => {
-    // TODO: Implement sendPayment
-    return {
-      send: () => true,
-      stop: () => true,
-    };
+    throw new Error("sendPayment Not Implemented");
   },
 
   sendPaymentSync: async (_data) => {
-    // TODO: Implement sendPaymentSync
-    return "";
+    throw new Error("sendPaymentSync Not Implemented");
   },
 
   sendToRoute: (_onResponse, _onError) => {
-    // TODO: Implement sendToRoute
-    return {
-      send: () => true,
-      stop: () => true,
-    };
+    throw new Error("sendToRoute Not Implemented");
   },
 
   sendToRouteSync: async (_data) => {
-    // TODO: Implement sendToRouteSync
-    return "";
+    throw new Error("sendToRouteSync Not Implemented");
   },
 
   addInvoice: async (_data) => {
-    // TODO: Implement addInvoice
-    return "";
+    throw new Error("addInvoice Not Implemented");
   },
 
   listInvoices: async (_data) => {
-    // TODO: Implement listInvoices
-    return "";
+    throw new Error("listInvoices Not Implemented");
   },
 
   lookupInvoice: async (_data) => {
-    // TODO: Implement lookupInvoice
-    return "";
+    throw new Error("lookupInvoice Not Implemented");
   },
 
   subscribeInvoices: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribeInvoices
-    return () => {};
+    throw new Error("subscribeInvoices Not Implemented");
   },
 
   decodePayReq: async (_data) => {
-    // TODO: Implement decodePayReq
-    return "";
+    throw new Error("decodePayReq Not Implemented");
   },
 
   listPayments: async (_data) => {
-    // TODO: Implement listPayments
-    return "";
+    throw new Error("listPayments Not Implemented");
   },
 
   deletePayment: async (_data) => {
-    // TODO: Implement deletePayment
-    return "";
+    throw new Error("deletePayment Not Implemented");
   },
 
   deleteAllPayments: async (_data) => {
-    // TODO: Implement deleteAllPayments
-    return "";
+    throw new Error("deleteAllPayments Not Implemented");
   },
 
   describeGraph: async (_data) => {
-    // TODO: Implement describeGraph
-    return "";
+    throw new Error("describeGraph Not Implemented");
   },
 
   getNodeMetrics: async (_data) => {
-    // TODO: Implement getNodeMetrics
-    return "";
+    throw new Error("getNodeMetrics Not Implemented");
   },
 
   getChanInfo: async (_data) => {
-    // TODO: Implement getChanInfo
-    return "";
+    throw new Error("getChanInfo Not Implemented");
   },
 
   getNodeInfo: async (_data) => {
-    // TODO: Implement getNodeInfo
-    return "";
+    throw new Error("getNodeInfo Not Implemented");
   },
 
   queryRoutes: async (_data) => {
-    // TODO: Implement queryRoutes
-    return "";
+    throw new Error("queryRoutes Not Implemented");
   },
 
   getNetworkInfo: async (_data) => {
-    // TODO: Implement getNetworkInfo
-    return "";
+    throw new Error("getNetworkInfo Not Implemented");
   },
 
   stopDaemon: async (_data) => {
-    // TODO: Implement stopDaemon
-    return "";
+    throw new Error("stopDaemon Not Implemented");
   },
 
   subscribeChannelGraph: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribeChannelGraph
-    return () => {};
+    throw new Error("subscribeChannelGraph Not Implemented");
   },
 
   debugLevel: async (_data) => {
-    // TODO: Implement debugLevel
-    return "";
+    throw new Error("debugLevel Not Implemented");
   },
 
   feeReport: async (_data) => {
-    // TODO: Implement feeReport
-    return "";
+    throw new Error("feeReport Not Implemented");
   },
 
   updateChannelPolicy: async (_data) => {
-    // TODO: Implement updateChannelPolicy
-    return "";
+    throw new Error("updateChannelPolicy Not Implemented");
   },
 
   forwardingHistory: async (_data) => {
-    // TODO: Implement forwardingHistory
-    return "";
+    throw new Error("forwardingHistory Not Implemented");
   },
 
   exportChannelBackup: async (_data) => {
-    // TODO: Implement exportChannelBackup
-    return "";
+    throw new Error("exportChannelBackup Not Implemented");
   },
 
   exportAllChannelBackups: async (_data) => {
-    // TODO: Implement exportAllChannelBackups
-    return "";
+    throw new Error("exportAllChannelBackups Not Implemented");
   },
 
   verifyChanBackup: async (_data) => {
-    // TODO: Implement verifyChanBackup
-    return "";
+    throw new Error("verifyChanBackup Not Implemented");
   },
 
   restoreChannelBackups: async (_data) => {
-    // TODO: Implement restoreChannelBackups
-    return "";
+    throw new Error("restoreChannelBackups Not Implemented");
   },
 
   subscribeChannelBackups: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribeChannelBackups
-    return () => {};
+    throw new Error("subscribeChannelBackups Not Implemented");
   },
 
   bakeMacaroon: async (_data) => {
-    // TODO: Implement bakeMacaroon
-    return "";
+    throw new Error("bakeMacaroon Not Implemented");
   },
 
   listMacaroonIDs: async (_data) => {
-    // TODO: Implement listMacaroonIDs
-    return "";
+    throw new Error("listMacaroonIDs Not Implemented");
   },
 
   deleteMacaroonID: async (_data) => {
-    // TODO: Implement deleteMacaroonID
-    return "";
+    throw new Error("deleteMacaroonID Not Implemented");
   },
 
   listPermissions: async (_data) => {
-    // TODO: Implement listPermissions
-    return "";
+    throw new Error("listPermissions Not Implemented");
   },
 
   checkMacaroonPermissions: async (_data) => {
-    // TODO: Implement checkMacaroonPermissions
-    return "";
+    throw new Error("checkMacaroonPermissions Not Implemented");
   },
 
   registerRPCMiddleware: (_onResponse, _onError) => {
-    // TODO: Implement registerRPCMiddleware
-    return {
-      send: () => true,
-      stop: () => true,
-    };
+    throw new Error("registerRPCMiddleware Not Implemented");
   },
 
   sendCustomMessage: async (_data) => {
-    // TODO: Implement sendCustomMessage
-    return "";
+    throw new Error("sendCustomMessage Not Implemented");
   },
 
   subscribeCustomMessages: (_data, _onResponse, _onError) => {
-    // TODO: Implement subscribeCustomMessages
-    return () => {};
+    throw new Error("subscribeCustomMessages Not Implemented");
   },
 
   listAliases: async (_data) => {
-    // TODO: Implement listAliases
-    return "";
+    throw new Error("listAliases Not Implemented");
   },
 
   lookupHtlcResolution: async (_data) => {
-    // TODO: Implement lookupHtlcResolution
-    return "";
+    throw new Error("lookupHtlcResolution Not Implemented");
   },
 
   genSeed: async (_data) => {
-    // TODO: Implement genSeed
-    return "";
+    throw new Error("genSeed Not Implemented");
   },
 
   changePassword: async (_data) => {
-    // TODO: Implement changePassword
-    return "";
+    throw new Error("changePassword Not Implemented");
   },
 
   getState: async (_data) => {
-    // TODO: Implement getState
-    return "";
+    throw new Error("getState Not Implemented");
   },
 
   autopilotStatus: async (_data) => {
-    // TODO: Implement autopilotStatus
-    return "";
+    throw new Error("autopilotStatus Not Implemented");
   },
 
   autopilotModifyStatus: async (_data) => {
-    // TODO: Implement autopilotModifyStatus
-    return "";
+    throw new Error("autopilotModifyStatus Not Implemented");
   },
 
   autopilotQueryScores: async (_data) => {
-    // TODO: Implement autopilotQueryScores
-    return "";
+    throw new Error("autopilotQueryScores Not Implemented");
   },
 
   autopilotSetScores: async (_data) => {
-    // TODO: Implement autopilotSetScores
-    return "";
+    throw new Error("autopilotSetScores Not Implemented");
   },
 
   chainNotifierRegisterConfirmationsNtfn: (_data, _onResponse, _onError) => {
-    // TODO: Implement chainNotifierRegisterConfirmationsNtfn
-    return () => {};
+    throw new Error("chainNotifierRegisterConfirmationsNtfn Not Implemented");
   },
 
   chainNotifierRegisterSpendNtfn: (_data, _onResponse, _onError) => {
-    // TODO: Implement chainNotifierRegisterSpendNtfn
-    return () => {};
+    throw new Error("chainNotifierRegisterSpendNtfn Not Implemented");
   },
 
   chainNotifierRegisterBlockEpochNtfn: (_data, _onResponse, _onError) => {
-    // TODO: Implement chainNotifierRegisterBlockEpochNtfn
-    return () => {};
+    throw new Error("chainNotifierRegisterBlockEpochNtfn Not Implemented");
   },
 
   invoicesSubscribeSingleInvoice: (_data, _onResponse, _onError) => {
-    // TODO: Implement invoicesSubscribeSingleInvoice
-    return () => {};
+    throw new Error("invoicesSubscribeSingleInvoice Not Implemented");
   },
 
   invoicesCancelInvoice: async (_data) => {
-    // TODO: Implement invoicesCancelInvoice
-    return "";
+    throw new Error("invoicesCancelInvoice Not Implemented");
   },
 
   invoicesAddHoldInvoice: async (_data) => {
-    // TODO: Implement invoicesAddHoldInvoice
-    return "";
+    throw new Error("invoicesAddHoldInvoice Not Implemented");
   },
 
   invoicesSettleInvoice: async (_data) => {
-    // TODO: Implement invoicesSettleInvoice
-    return "";
+    throw new Error("invoicesSettleInvoice Not Implemented");
   },
 
   invoicesLookupInvoiceV2: async (_data) => {
-    // TODO: Implement invoicesLookupInvoiceV2
-    return "";
+    throw new Error("invoicesLookupInvoiceV2 Not Implemented");
   },
 
   neutrinoKitStatus: async (_data) => {
-    // TODO: Implement neutrinoKitStatus
-    return "";
+    throw new Error("neutrinoKitStatus Not Implemented");
   },
 
   neutrinoKitAddPeer: async (_data) => {
-    // TODO: Implement neutrinoKitAddPeer
-    return "";
+    throw new Error("neutrinoKitAddPeer Not Implemented");
   },
 
   neutrinoKitDisconnectPeer: async (_data) => {
-    // TODO: Implement neutrinoKitDisconnectPeer
-    return "";
+    throw new Error("neutrinoKitDisconnectPeer Not Implemented");
   },
 
   neutrinoKitIsBanned: async (_data) => {
-    // TODO: Implement neutrinoKitIsBanned
-    return "";
+    throw new Error("neutrinoKitIsBanned Not Implemented");
   },
 
   neutrinoKitGetBlockHeader: async (_data) => {
-    // TODO: Implement neutrinoKitGetBlockHeader
-    return "";
+    throw new Error("neutrinoKitGetBlockHeader Not Implemented");
   },
 
   neutrinoKitGetBlock: async (_data) => {
-    // TODO: Implement neutrinoKitGetBlock
-    return "";
+    throw new Error("neutrinoKitGetBlock Not Implemented");
   },
 
   neutrinoKitGetCFilter: async (_data) => {
-    // TODO: Implement neutrinoKitGetCFilter
-    return "";
+    throw new Error("neutrinoKitGetCFilter Not Implemented");
   },
 
   neutrinoKitGetBlockHash: async (_data) => {
-    // TODO: Implement neutrinoKitGetBlockHash
-    return "";
+    throw new Error("neutrinoKitGetBlockHash Not Implemented");
   },
 
   peersUpdateNodeAnnouncement: async (_data) => {
-    // TODO: Implement peersUpdateNodeAnnouncement
-    return "";
+    throw new Error("peersUpdateNodeAnnouncement Not Implemented");
   },
 
   routerSendPaymentV2: (_data, _onResponse, _onError) => {
-    // TODO: Implement routerSendPaymentV2
-    return () => {};
+    throw new Error("routerSendPaymentV2 Not Implemented");
   },
 
   routerTrackPaymentV2: (_data, _onResponse, _onError) => {
-    // TODO: Implement routerTrackPaymentV2
-    return () => {};
+    throw new Error("routerTrackPaymentV2 Not Implemented");
   },
 
   routerTrackPayments: (_data, _onResponse, _onError) => {
-    // TODO: Implement routerTrackPayments
-    return () => {};
+    throw new Error("routerTrackPayments Not Implemented");
   },
 
   routerEstimateRouteFee: async (_data) => {
-    // TODO: Implement routerEstimateRouteFee
-    return "";
+    throw new Error("routerEstimateRouteFee Not Implemented");
   },
 
   routerSendToRoute: async (_data) => {
-    // TODO: Implement routerSendToRoute
-    return "";
+    throw new Error("routerSendToRoute Not Implemented");
   },
 
   routerSendToRouteV2: async (_data) => {
-    // TODO: Implement routerSendToRouteV2
-    return "";
+    throw new Error("routerSendToRouteV2 Not Implemented");
   },
 
   routerResetMissionControl: async (_data) => {
-    // TODO: Implement routerResetMissionControl
-    return "";
+    throw new Error("routerResetMissionControl Not Implemented");
   },
 
   routerQueryMissionControl: async (_data) => {
-    // TODO: Implement routerQueryMissionControl
-    return "";
+    throw new Error("routerQueryMissionControl Not Implemented");
   },
 
   routerXImportMissionControl: async (_data) => {
-    // TODO: Implement routerXImportMissionControl
-    return "";
+    throw new Error("routerXImportMissionControl Not Implemented");
   },
 
   routerGetMissionControlConfig: async (_data) => {
-    // TODO: Implement routerGetMissionControlConfig
-    return "";
+    throw new Error("routerGetMissionControlConfig Not Implemented");
   },
 
   routerSetMissionControlConfig: async (_data) => {
-    // TODO: Implement routerSetMissionControlConfig
-    return "";
+    throw new Error("routerSetMissionControlConfig Not Implemented");
   },
 
   routerQueryProbability: async (_data) => {
-    // TODO: Implement routerQueryProbability
-    return "";
+    throw new Error("routerQueryProbability Not Implemented");
   },
 
   routerBuildRoute: async (_data) => {
-    // TODO: Implement routerBuildRoute
-    return "";
+    throw new Error("routerBuildRoute Not Implemented");
   },
 
   routerSubscribeHtlcEvents: (_data, _onResponse, _onError) => {
-    // TODO: Implement routerSubscribeHtlcEvents
-    return () => {};
+    throw new Error("routerSubscribeHtlcEvents Not Implemented");
   },
 
   routerSendPayment: (_data, _onResponse, _onError) => {
-    // TODO: Implement routerSendPayment
-    return () => {};
+    throw new Error("routerSendPayment Not Implemented");
   },
 
   routerTrackPayment: (_data, _onResponse, _onError) => {
-    // TODO: Implement routerTrackPayment
-    return () => {};
+    throw new Error("routerTrackPayment Not Implemented");
   },
 
   routerHtlcInterceptor: (_onResponse, _onError) => {
-    // TODO: Implement routerHtlcInterceptor
-    return {
-      send: () => true,
-      stop: () => true,
-    };
+    throw new Error("routerHtlcInterceptor Not Implemented");
   },
 
   routerUpdateChanStatus: async (_data) => {
-    // TODO: Implement routerUpdateChanStatus
-    return "";
+    throw new Error("routerUpdateChanStatus Not Implemented");
   },
 
   signerSignOutputRaw: async (_data) => {
-    // TODO: Implement signerSignOutputRaw
-    return "";
+    throw new Error("signerSignOutputRaw Not Implemented");
   },
 
   signerComputeInputScript: async (_data) => {
-    // TODO: Implement signerComputeInputScript
-    return "";
+    throw new Error("signerComputeInputScript Not Implemented");
   },
 
   signerSignMessage: async (_data) => {
-    // TODO: Implement signerSignMessage
-    return "";
+    throw new Error("signerSignMessage Not Implemented");
   },
 
   signerVerifyMessage: async (_data) => {
-    // TODO: Implement signerVerifyMessage
-    return "";
+    throw new Error("signerVerifyMessage Not Implemented");
   },
 
   signerDeriveSharedKey: async (_data) => {
-    // TODO: Implement signerDeriveSharedKey
-    return "";
+    throw new Error("signerDeriveSharedKey Not Implemented");
   },
 
   signerMuSig2CombineKeys: async (_data) => {
-    // TODO: Implement signerMuSig2CombineKeys
-    return "";
+    throw new Error("signerMuSig2CombineKeys Not Implemented");
   },
 
   signerMuSig2CreateSession: async (_data) => {
-    // TODO: Implement signerMuSig2CreateSession
-    return "";
+    throw new Error("signerMuSig2CreateSession Not Implemented");
   },
 
   signerMuSig2RegisterNonces: async (_data) => {
-    // TODO: Implement signerMuSig2RegisterNonces
-    return "";
+    throw new Error("signerMuSig2RegisterNonces Not Implemented");
   },
 
   signerMuSig2Sign: async (_data) => {
-    // TODO: Implement signerMuSig2Sign
-    return "";
+    throw new Error("signerMuSig2Sign Not Implemented");
   },
 
   signerMuSig2CombineSig: async (_data) => {
-    // TODO: Implement signerMuSig2CombineSig
-    return "";
+    throw new Error("signerMuSig2CombineSig Not Implemented");
   },
 
   signerMuSig2Cleanup: async (_data) => {
-    // TODO: Implement signerMuSig2Cleanup
-    return "";
+    throw new Error("signerMuSig2Cleanup Not Implemented");
   },
 
   versionerGetVersion: async (_data) => {
-    // TODO: Implement versionerGetVersion
-    return "";
+    throw new Error("versionerGetVersion Not Implemented");
   },
 
   walletKitListUnspent: async (_data) => {
-    // TODO: Implement walletKitListUnspent
-    return "";
+    throw new Error("walletKitListUnspent Not Implemented");
   },
 
   walletKitLeaseOutput: async (_data) => {
-    // TODO: Implement walletKitLeaseOutput
-    return "";
+    throw new Error("walletKitLeaseOutput Not Implemented");
   },
 
   walletKitReleaseOutput: async (_data) => {
-    // TODO: Implement walletKitReleaseOutput
-    return "";
+    throw new Error("walletKitReleaseOutput Not Implemented");
   },
 
   walletKitListLeases: async (_data) => {
-    // TODO: Implement walletKitListLeases
-    return "";
+    throw new Error("walletKitListLeases Not Implemented");
   },
 
   walletKitDeriveNextKey: async (_data) => {
-    // TODO: Implement walletKitDeriveNextKey
-    return "";
+    throw new Error("walletKitDeriveNextKey Not Implemented");
   },
 
   walletKitDeriveKey: async (_data) => {
-    // TODO: Implement walletKitDeriveKey
-    return "";
+    throw new Error("walletKitDeriveKey Not Implemented");
   },
 
   walletKitNextAddr: async (_data) => {
-    // TODO: Implement walletKitNextAddr
-    return "";
+    throw new Error("walletKitNextAddr Not Implemented");
   },
 
   walletKitListAccounts: async (_data) => {
-    // TODO: Implement walletKitListAccounts
-    return "";
+    throw new Error("walletKitListAccounts Not Implemented");
   },
 
   walletKitRequiredReserve: async (_data) => {
-    // TODO: Implement walletKitRequiredReserve
-    return "";
+    throw new Error("walletKitRequiredReserve Not Implemented");
   },
 
   walletKitListAddresses: async (_data) => {
-    // TODO: Implement walletKitListAddresses
-    return "";
+    throw new Error("walletKitListAddresses Not Implemented");
   },
 
   walletKitSignMessageWithAddr: async (_data) => {
-    // TODO: Implement walletKitSignMessageWithAddr
-    return "";
+    throw new Error("walletKitSignMessageWithAddr Not Implemented");
   },
 
   walletKitVerifyMessageWithAddr: async (_data) => {
-    // TODO: Implement walletKitVerifyMessageWithAddr
-    return "";
+    throw new Error("walletKitVerifyMessageWithAddr Not Implemented");
   },
 
   walletKitImportAccount: async (_data) => {
-    // TODO: Implement walletKitImportAccount
-    return "";
+    throw new Error("walletKitImportAccount Not Implemented");
   },
 
   walletKitImportPublicKey: async (_data) => {
-    // TODO: Implement walletKitImportPublicKey
-    return "";
+    throw new Error("walletKitImportPublicKey Not Implemented");
   },
 
   walletKitImportTapscript: async (_data) => {
-    // TODO: Implement walletKitImportTapscript
-    return "";
+    throw new Error("walletKitImportTapscript Not Implemented");
   },
 
   walletKitPublishTransaction: async (_data) => {
-    // TODO: Implement walletKitPublishTransaction
-    return "";
+    throw new Error("walletKitPublishTransaction Not Implemented");
   },
 
   walletKitSendOutputs: async (_data) => {
-    // TODO: Implement walletKitSendOutputs
-    return "";
+    throw new Error("walletKitSendOutputs Not Implemented");
   },
 
   walletKitEstimateFee: async (_data) => {
-    // TODO: Implement walletKitEstimateFee
-    return "";
+    throw new Error("walletKitEstimateFee Not Implemented");
   },
 
   walletKitPendingSweeps: async (_data) => {
-    // TODO: Implement walletKitPendingSweeps
-    return "";
+    throw new Error("walletKitPendingSweeps Not Implemented");
   },
 
   walletKitBumpFee: async (_data) => {
-    // TODO: Implement walletKitBumpFee
-    return "";
+    throw new Error("walletKitBumpFee Not Implemented");
   },
 
   walletKitListSweeps: async (_data) => {
-    // TODO: Implement walletKitListSweeps
-    return "";
+    throw new Error("walletKitListSweeps Not Implemented");
   },
 
   walletKitLabelTransaction: async (_data) => {
-    // TODO: Implement walletKitLabelTransaction
-    return "";
+    throw new Error("walletKitLabelTransaction Not Implemented");
   },
 
   walletKitFundPsbt: async (_data) => {
-    // TODO: Implement walletKitFundPsbt
-    return "";
+    throw new Error("walletKitFundPsbt Not Implemented");
   },
 
   walletKitSignPsbt: async (_data) => {
-    // TODO: Implement walletKitSignPsbt
-    return "";
+    throw new Error("walletKitSignPsbt Not Implemented");
   },
 
   walletKitFinalizePsbt: async (_data) => {
-    // TODO: Implement walletKitFinalizePsbt
-    return "";
+    throw new Error("walletKitFinalizePsbt Not Implemented");
   },
 
   watchtowerGetInfo: async (_data) => {
-    // TODO: Implement watchtowerGetInfo
-    return "";
+    throw new Error("watchtowerGetInfo Not Implemented");
   },
 
   watchtowerClientAddTower: async (_data) => {
-    // TODO: Implement watchtowerClientAddTower
-    return "";
+    throw new Error("watchtowerClientAddTower Not Implemented");
   },
 
   watchtowerClientRemoveTower: async (_data) => {
-    // TODO: Implement watchtowerClientRemoveTower
-    return "";
+    throw new Error("watchtowerClientRemoveTower Not Implemented");
   },
 
   watchtowerClientListTowers: async (_data) => {
-    // TODO: Implement watchtowerClientListTowers
-    return "";
+    throw new Error("watchtowerClientListTowers Not Implemented");
   },
 
   watchtowerClientGetTowerInfo: async (_data) => {
-    // TODO: Implement watchtowerClientGetTowerInfo
-    return "";
+    throw new Error("watchtowerClientGetTowerInfo Not Implemented");
   },
 
   watchtowerClientStats: async (_data) => {
-    // TODO: Implement watchtowerClientStats
-    return "";
+    throw new Error("watchtowerClientStats Not Implemented");
   },
 
   watchtowerClientPolicy: async (_data) => {
-    // TODO: Implement watchtowerClientPolicy
-    return "";
+    throw new Error("watchtowerClientPolicy Not Implemented");
   },
 };
 
