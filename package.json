@@ -41,6 +41,10 @@
       "require": "./lib/commonjs/proto/*.js",
       "import": "./lib/module/proto/*.js",
       "types": "./lib/typescript/src/proto/*.d.ts"
+    },
+    "./package.json": {
+      "require": "./package.json",
+      "import": "./package.json"
     }
   },
   "scripts": {
